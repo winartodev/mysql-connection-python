@@ -35,7 +35,7 @@ try:
     mydb.commit()
     print(f"{mysqlcursor.rowcount} records inserted.")
 
-    mysqlcursor.execute("SELECT * FROM tbl_employee LIMIT 5")  # Select the first 5 rows
+    mysqlcursor.execute("SELECT * FROM tbl_employee") 
     myresult = mysqlcursor.fetchall()
 
     for x in myresult:
